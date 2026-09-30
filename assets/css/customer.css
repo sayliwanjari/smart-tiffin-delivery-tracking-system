@@ -1,0 +1,286 @@
+:root {
+    --tiffin-orange: #ff6b00;
+    --tiffin-yellow: #f59e0b;
+    --tiffin-dark: #111827;
+    --tiffin-light: #f8fafc;
+    --tiffin-muted: #64748b;
+    --tiffin-border: #e5e7eb;
+}
+
+body.customer-body {
+    background: var(--tiffin-light);
+    color: var(--tiffin-dark);
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================================
+   AUTH
+========================================================= */
+
+.customer-auth-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(255, 107, 0, 0.18),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #fff7ed,
+            #ffffff
+        );
+}
+
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 430px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(17, 24, 39, 0.12);
+}
+
+.brand-icon {
+    width: 68px;
+    height: 68px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--tiffin-orange);
+    color: white;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+.btn-customer-primary {
+    background: var(--tiffin-orange);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-weight: 600;
+}
+
+.btn-customer-primary:hover {
+    background: #e85f00;
+    color: white;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.customer-navbar {
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid var(--tiffin-border);
+    backdrop-filter: blur(12px);
+}
+
+.customer-brand {
+    font-size: 21px;
+    font-weight: 800;
+    color: var(--tiffin-dark);
+}
+
+.customer-brand:hover {
+    color: var(--tiffin-orange);
+}
+
+.brand-small-icon {
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--tiffin-orange);
+    color: white;
+    border-radius: 11px;
+    margin-right: 7px;
+}
+
+.customer-navbar .nav-link {
+    color: #475569;
+    font-weight: 600;
+    padding: 10px 14px !important;
+}
+
+.customer-navbar .nav-link:hover,
+.customer-navbar .nav-link.active {
+    color: var(--tiffin-orange);
+}
+
+.customer-profile-button {
+    border: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.customer-avatar {
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff1e6;
+    color: var(--tiffin-orange);
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.customer-main {
+    min-height: calc(100vh - 180px);
+}
+
+
+/* =========================================================
+   DASHBOARD
+========================================================= */
+
+.customer-hero {
+    background:
+        linear-gradient(
+            135deg,
+            #fff7ed,
+            #ffffff
+        );
+    border-radius: 28px;
+    padding: 45px;
+    position: relative;
+    overflow: hidden;
+}
+
+.customer-hero::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: rgba(245, 158, 11, 0.13);
+    right: -80px;
+    top: -80px;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #fff1e6;
+    color: var(--tiffin-orange);
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.customer-hero h1 {
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 800;
+    line-height: 1.05;
+}
+
+.quick-card {
+    background: white;
+    border: 1px solid var(--tiffin-border);
+    border-radius: 18px;
+    padding: 20px;
+    height: 100%;
+    transition: 0.25s ease;
+}
+
+.quick-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(17, 24, 39, 0.08);
+}
+
+.quick-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: #fff1e6;
+    color: var(--tiffin-orange);
+    font-size: 21px;
+}
+
+.dashboard-card {
+    background: white;
+    border: 1px solid var(--tiffin-border);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.dashboard-card-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--tiffin-border);
+}
+
+.dashboard-card-body {
+    padding: 20px;
+}
+
+.status-badge {
+    padding: 7px 12px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.customer-footer {
+    margin-top: 50px;
+    padding: 35px 0;
+    background: var(--tiffin-dark);
+    color: #cbd5e1;
+}
+
+.customer-footer h5 {
+    color: white;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .auth-card {
+        padding: 28px 22px;
+    }
+
+    .customer-hero {
+        padding: 30px 22px;
+        border-radius: 20px;
+    }
+
+    .customer-navbar .dropdown {
+        margin-top: 12px;
+    }
+
+}
